@@ -9,13 +9,14 @@
 <body>
   <?php
     require 'FileReader.php';
+    require 'CsvFileReader.php';
 
-    $fileReader = new FileReader()
+    $fileReader = new FileReader();
   ?>
 
   <p>
     <?php
-      echo $fileReader->data
+      echo $fileReader->getData();
     ?>
   </p>
 </body>
